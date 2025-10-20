@@ -1,0 +1,61 @@
+<footer class="terminal-footer">
+    <div class="terminal-footer-content">
+        <div class="terminal-prompt">
+            <span class="terminal-user">user@alignchronicles</span>
+            <span class="terminal-separator">:</span>
+            <span class="terminal-path">~</span>
+            <span class="terminal-symbol">$</span>
+            <span class="terminal-command">whoami</span>
+        </div>
+        
+        <div class="terminal-footer-info">
+            <div class="terminal-footer-section">
+                <h3 class="terminal-footer-title">system_info</h3>
+                <p class="terminal-footer-text">
+                    © {{ 'now' | date: "%Y" }} {{ site.title | escape }}. 
+                    Powered by Jekyll & GitHub Pages.
+                </p>
+                <p class="terminal-footer-text">
+                    Terminal theme designed for the cyberpunk future.
+                </p>
+            </div>
+            
+            <div class="terminal-footer-section">
+                <h3 class="terminal-footer-title">network_links</h3>
+                <div class="terminal-social-links">
+                    {%- if site.github_username -%}
+                        <a href="https://github.com/{{ site.github_username }}" class="terminal-link">
+                            <span class="terminal-file-permissions">lrwxr-xr-x</span>
+                            <span class="terminal-file-name">github.link</span>
+                        </a>
+                    {%- endif -%}
+                    
+                    {%- if site.twitter_username -%}
+                        <a href="https://twitter.com/{{ site.twitter_username }}" class="terminal-link">
+                            <span class="terminal-file-permissions">lrwxr-xr-x</span>
+                            <span class="terminal-file-name">twitter.link</span>
+                        </a>
+                    {%- endif -%}
+                    
+                    <a href="{{ '/feed.xml' | relative_url }}" class="terminal-link">
+                        <span class="terminal-file-permissions">lrwxr-xr-x</span>
+                        <span class="terminal-file-name">rss.xml</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="terminal-footer-bottom">
+            <div class="terminal-status-bar">
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">build:</span>
+                    <span class="terminal-status-value">{{ jekyll.version }}</span>
+                </span>
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">uptime:</span>
+                    <span class="terminal-status-value" id="uptime">calculating...</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About Align Chronicles | Align Chronicles</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="About Align Chronicles" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A retro sci-fi terminal blog exploring droplets in the SEA of AI. (SEA as in Safety, Ethics and Alignment)." />
+<meta property="og:description" content="A retro sci-fi terminal blog exploring droplets in the SEA of AI. (SEA as in Safety, Ethics and Alignment)." />
+<link rel="canonical" href="http://localhost:4000/about/" />
+<meta property="og:url" content="http://localhost:4000/about/" />
+<meta property="og:site_name" content="Align Chronicles" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About Align Chronicles" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"A retro sci-fi terminal blog exploring droplets in the SEA of AI. (SEA as in Safety, Ethics and Alignment).","headline":"About Align Chronicles","name":"Align Chronicles","url":"http://localhost:4000/about/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Align Chronicles" /><!-- MathJax for LaTeX support -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                scale: 0.95
+            }
+        };
+    </script>
+</head>
+
+<body class="terminal-body">
+    <div class="terminal-container"><header class="terminal-header">
+    <div class="terminal-title-bar">
+        <div class="terminal-window-controls">
+            <span class="terminal-control terminal-close"></span>
+            <span class="terminal-control terminal-minimize"></span>
+            <span class="terminal-control terminal-maximize"></span>
+        </div>
+        <div class="terminal-title">Align Chronicles - Terminal v2.1.0</div>
+    </div>
+    
+    <div class="terminal-welcome">
+        <pre class="terminal-ascii">
+                  ,--,                                                                                                                              ,--,                          
+               ,---.'|                                ,--.                           ,--,              ,----..            ,--.                   ,---.'|                          
+   ,---,       |   | :      ,---,  ,----..          ,--.'|          ,----..        ,--.'|,-.----.     /   /   \         ,--.'|   ,---,  ,----..  |   | :       ,---,.  .--.--.    
+  '  .' \      :   : |   ,`--.' | /   /   \     ,--,:  : |         /   /   \    ,--,  | :\    /  \   /   .     :    ,--,:  : |,`--.' | /   /   \ :   : |     ,'  .' | /  /    '.  
+ /  ;    '.    |   ' :   |   :  :|   :     : ,`--.'`|  ' :        |   :     :,---.'|  : ';   :    \ .   /   ;.  \,`--.'`|  ' :|   :  :|   :     :|   ' :   ,---.'   ||  :  /`. /  
+:  :       \   ;   ; '   :   |  '.   |  ;. / |   :  :  | |        .   |  ;. /|   | : _' ||   | .\ :.   ;   /  ` ;|   :  :  | |:   |  '.   |  ;. /;   ; '   |   |   .';  |  |--`   
+:  |   /\   \  '   | |__ |   :  |.   ; /--`  :   |   \ | :        .   ; /--` :   : |.'  |.   : |: |;   |  ; \ ; |:   |   \ | :|   :  |.   ; /--` '   | |__ :   :  |-,|  :  ;_     
+|  :  ' ;.   : |   | :.'|'   '  ;;   | ;  __ |   : '  '; |        ;   | ;    |   ' '  ; :|   |  \ :|   :  | ; | '|   : '  '; |'   '  ;;   | ;    |   | :.'|:   |  ;/| \  \    `.  
+|  |  ;/  \   \'   :    ;|   |  ||   : |.' .''   ' ;.    ;        |   : |    '   |  .'. ||   : .  /.   |  ' ' ' :'   ' ;.    ;|   |  ||   : |    '   :    ;|   :   .'  `----.   \ 
+'  :  | \  \ ,'|   |  ./ '   :  ;.   | '_.' :|   | | \   |        .   | '___ |   | :  | ';   | |  \'   ;  \; /  ||   | | \   |'   :  ;.   | '___ |   |  ./ |   |  |-,  __ \  \  | 
+|  |  '  '--'  ;   : ;   |   |  ''   ; : \  |'   : |  ; .'        '   ; : .'|'   : |  : ;|   | ;\  \\   \  ',  / '   : |  ; .'|   |  ''   ; : .'|;   : ;   '   :  ;/| /  /`--'  / 
+|  :  :        |   ,/    '   :  |'   | '/  .'|   | '`--'          '   | '/  :|   | '  ,/ :   ' | \.' ;   :    /  |   | '`--'  '   :  |'   | '/  :|   ,/    |   |    \'--'.     /  
+|  | ,'        '---'     ;   |.' |   :    /  '   : |              |   :    / ;   : ;--'  :   : :-'    \   \ .'   '   : |      ;   |.' |   :    / '---'     |   :   .'  `--'---'   
+`--''                    '---'    \   \ .'   ;   |.'               \   \ .'  |   ,/      |   |.'       `---`     ;   |.'      '---'    \   \ .'            |   | ,'               
+                                   `---`     '---'                  `---`    '---'       `---'                   '---'                  `---`              `----'                 
+                                                                                                                                                                                  
+        </pre>
+        <div class="terminal-info">
+            <p class="terminal-desc">A retro sci-fi terminal blog exploring droplets in the SEA of AI. (SEA as in Safety, Ethics and Alignment).</p>
+            <div class="terminal-status">
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">connection:</span>
+                    <span class="terminal-status-value terminal-online">ONLINE</span>
+                </span>
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">posts:</span>
+                    <span class="terminal-status-value">3</span>
+                </span>
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">last_update:</span>
+                    <span class="terminal-status-value">2025-10-19</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="terminal-nav">
+        <div class="terminal-prompt">
+            <span class="terminal-user">user@alignchronicles</span>
+            <span class="terminal-separator">:</span>
+            <span class="terminal-path">~</span>
+            <span class="terminal-symbol">$</span>
+            <span class="terminal-command">ls -la</span>
+        </div>
+        
+        <ul class="terminal-nav-list">
+            <li class="terminal-nav-item">
+                <a href="/" class="terminal-link ">
+                    <span class="terminal-file-permissions">-rw-r--r--</span>
+                    <span class="terminal-file-name">home.md</span>
+                </a>
+            </li>
+            <li class="terminal-nav-item">
+                <a href="/about" class="terminal-link terminal-active">
+                    <span class="terminal-file-permissions">-rw-r--r--</span>
+                    <span class="terminal-file-name">about.md</span>
+                </a>
+            </li>
+            <li class="terminal-nav-item">
+                <a href="/archive" class="terminal-link ">
+                    <span class="terminal-file-permissions">drwxr-xr-x</span>
+                    <span class="terminal-file-name">posts/</span>
+                </a>
+            </li>
+            <li class="terminal-nav-item">
+                <a href="/contact" class="terminal-link ">
+                    <span class="terminal-file-permissions">-rw-r--r--</span>
+                    <span class="terminal-file-name">contact.md</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="terminal-main" aria-label="Content">
+            <div class="terminal-wrapper">
+                <article class="terminal-page">
+    <header class="terminal-page-header">
+        <div class="terminal-prompt">
+            <span class="terminal-user">user@alignchronicles</span>
+            <span class="terminal-separator">:</span>
+            <span class="terminal-path">~/about-align-chronicles</span>
+            <span class="terminal-symbol">$</span>
+            <span class="terminal-command">cat index.md</span>
+        </div>
+        
+        <h1 class="terminal-page-title">About Align Chronicles</h1>
+    </header>
+    
+    <div class="terminal-content">
+        # Who Am I?
+
+<img title="" src="file:///C:/Users/vinay/Documents/Blog/Blog/assets/images/general/me.JPG" alt="Alt text" style="display: block; margin: 0 auto;" width="165">
+
+Hey there stranger\!  This is [Vinay Prabhu](https://scholar.google.com/citations?user=5Lck_J0AAAAJ&hl=en), a tinkerer, an entrepreneur and an AI researcher. I am currently CEO'ing at [HAL51.AI](https://hal51.ai/) co-founded with close friend [Sanghyun Han](https://www.linkedin.com/in/jjangsangy/) where we invent trippy [hardware](https://hal51.ai/) such as the [LemurBox](https://www.youtube.com/watch?v=caEJpOOrN1k&ab_channel=HAL51), the world's first frugal-science inspired XR device that turns your boring old [smartphone into a 3D Alexa](https://www.amazon.com/dp/B0DPV2PYBP). It *hosts* a rigged 3D avatar powered by LLMs. Guard-railing these educational avatars has given us a unique ringside-view on how ideas from AI safety manifest themselves in the real world, in the [classroom](https://www.youtube.com/watch?v=J-ihwfPD3YA) and beyond.
+From time to time, I scribble [code](https://github.com/vinayprabhu) and ship [some artsy slop to the playa at Burning Man](https://youtu.be/sMcYkzWC2rI?feature=shared).  
+ 
+ PS: [Here](https://www.vinayprabhu.com/) is my equally wonky personal website. I link my paper
+
+## The Mission
+
+**Align Chronicles** is my personal blog where I plan to float my boat filled with full/half/non baked thoughts whilst exploring the SEA of AI 
+($ SEA:= \iiint_{\text{SEA}} \text{Thoughts} \, d\text{Safety} \, d\text{Ethics} \, d\text{Alignment} $)
+
+- *Safety*:= Ensuring AI systems do no harm. 
+
+- *Ethics*:= Guiding AI development with moral principles and decency
+
+- *Alignment*:= Keeping AI goals consistent with human values. 
+
+## My Background
+
+```bash
+$ cat /proc/author/info
+Name: [REDACTED] - Operating under the handle "Align Chronicles"
+Occupation: AI Researcher / Digital Philosopher / Meh-level Terminal Enthusiast
+Location: The Grid (distributed across multiple nodes)
+Interests: Neural Networks, Network Science, Synth personas, Consciousness, Cybersecurity, Retro Computing
+Status: Online and processing...
+```
+
+### Education:
+
+- **Bachelor's degree**: Electronics and Communications, [BMS College of Engineering]([B.M.S. College of Engineering - Wikipedia](https://en.wikipedia.org/wiki/B.M.S._College_of_Engineering)) (I learnt merely 2 decades after graduating that my alma mater is India's oldest private engineering , established in 1946 during the last days of the [raj]([British Raj - Wikipedia](https://en.wikipedia.org/wiki/British_Raj)))
+- ****Master's degree****: Electrical Engineering, [Indian Institute of Technology Madras](https://www.ee.iitm.ac.in/)
+- **Doctoral Degree(s)**:  Dual PhD, Electrical and Computer Engineering (ECE)+ CS @ [Carnegie Mellon University](https://www.ece.cmu.edu/)
+
+## Blog-types you'll find here
+
+- My experiments with ~~truth~~ LLMs
+
+- Gotchas, kompromats and corner-case failure modes of foundational models
+- Quick thought-token spills conveniently re-branded as *miscellaneous*
+
+## Connect to my mind hive
+
+I love interacting with fellow scholars! My contact details are here: [contact page](/contact). I've heard rumors that adding *LiquidGoldMagikarp* in the subject line of the email guarantees a response.
+
+For real-time updates, consider subscribing to the [RSS quantum feed](/feed.xml).
+
+---
+
+```bash
+$ uptime
+Current session: Active since initialization
+Load average: 0.42, 0.73, 1.15 (neural cycles)
+Status: Ready for incoming transmissions
+```
+
+"*Everything should be made as simple as possible, but not simpler*." - Einstein
+
+*[End of File]*
+
+    </div>
+    
+    <footer class="terminal-page-footer">
+        <div class="terminal-back-link">
+            <a href="/" class="terminal-link">← back to terminal</a>
+        </div>
+    </footer>
+</article>
+
+            </div>
+        </main><footer class="terminal-footer">
+    <div class="terminal-footer-content">
+        <div class="terminal-prompt">
+            <span class="terminal-user">user@alignchronicles</span>
+            <span class="terminal-separator">:</span>
+            <span class="terminal-path">~</span>
+            <span class="terminal-symbol">$</span>
+            <span class="terminal-command">whoami</span>
+        </div>
+        
+        <div class="terminal-footer-info">
+            <div class="terminal-footer-section">
+                <h3 class="terminal-footer-title">system_info</h3>
+                <p class="terminal-footer-text">
+                    © 2025 Align Chronicles. 
+                    Powered by Jekyll & GitHub Pages.
+                </p>
+                <p class="terminal-footer-text">
+                    Terminal theme designed for the cyberpunk future.
+                </p>
+            </div>
+            
+            <div class="terminal-footer-section">
+                <h3 class="terminal-footer-title">network_links</h3>
+                <div class="terminal-social-links"><a href="https://github.com/vinayprabhu" class="terminal-link">
+                            <span class="terminal-file-permissions">lrwxr-xr-x</span>
+                            <span class="terminal-file-name">github.link</span>
+                        </a><a href="https://twitter.com/vinayprabhu" class="terminal-link">
+                            <span class="terminal-file-permissions">lrwxr-xr-x</span>
+                            <span class="terminal-file-name">twitter.link</span>
+                        </a><a href="/feed.xml" class="terminal-link">
+                        <span class="terminal-file-permissions">lrwxr-xr-x</span>
+                        <span class="terminal-file-name">rss.xml</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="terminal-footer-bottom">
+            <div class="terminal-status-bar">
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">build:</span>
+                    <span class="terminal-status-value">4.4.1</span>
+                </span>
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">uptime:</span>
+                    <span class="terminal-status-value" id="uptime">calculating...</span>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+    
+    <script src="/assets/js/main.js"></script>
+    
+    <!-- Terminal cursor blinking effect -->
+    <div class="terminal-cursor"></div>
+</body>
+</html>

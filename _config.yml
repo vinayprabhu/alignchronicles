@@ -1,0 +1,63 @@
+
+# Site settings
+title: Align Chronicles
+email: vinaypra@alumni.cmu.edu
+description: >-
+  A retro sci-fi terminal blog exploring droplets in the SEA of AI. (SEA as in Safety, Ethics and Alignment).
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://vinayprabhu.github.io" # the base hostname & protocol for your site
+twitter_username: vinayprabhu 
+github_username: vinayprabhu
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Kramdown settings for LaTeX support
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+# Plugin settings for GitHub Pages
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:year/:month/:day/:title/
+
+# Pagination disabled for simplicity
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Align Chronicles"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

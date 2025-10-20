@@ -1,0 +1,89 @@
+---
+layout: default
+---
+
+<article class="terminal-post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="terminal-post-header">
+        <div class="terminal-prompt">
+            <span class="terminal-user">user@alignchronicles</span>
+            <span class="terminal-separator">:</span>
+            <span class="terminal-path">~/posts</span>
+            <span class="terminal-symbol">$</span>
+            <span class="terminal-command">cat {{ page.title | slugify }}.md</span>
+        </div>
+        
+        <h1 class="terminal-post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        
+        <div class="terminal-post-meta">
+            <span class="terminal-bracket">[</span>
+            <time class="terminal-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {%- assign date_format = site.minima.date_format | default: "%Y-%m-%d %H:%M" -%}
+                {{ page.date | date: date_format }}
+            </time>
+            {%- if page.modified_date -%}
+                <span class="terminal-separator"> | modified: </span>
+                <time class="terminal-date" datetime="{{ page.modified_date | date_to_xmlschema }}" itemprop="dateModified">
+                    {{ page.modified_date | date: date_format }}
+                </time>
+            {%- endif -%}
+            {%- if page.author -%}
+                <span class="terminal-separator"> | by </span>
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span class="terminal-author" itemprop="name">{{ page.author }}</span>
+                </span>
+            {%- endif -%}
+            <span class="terminal-bracket">]</span>
+        </div>
+        
+        {%- if page.categories.size > 0 -%}
+            <div class="terminal-categories">
+                <span class="terminal-label">categories:</span>
+                {%- for category in page.categories -%}
+                    <span class="terminal-tag">{{ category }}</span>
+                {%- endfor -%}
+            </div>
+        {%- endif -%}
+        
+        {%- if page.tags.size > 0 -%}
+            <div class="terminal-tags">
+                <span class="terminal-label">tags:</span>
+                {%- for tag in page.tags -%}
+                    <span class="terminal-tag">{{ tag }}</span>
+                {%- endfor -%}
+            </div>
+        {%- endif -%}
+    </header>
+    
+    <div class="terminal-content" itemprop="articleBody">
+        {{ content }}
+    </div>
+    
+    <footer class="terminal-post-footer">
+        <div class="terminal-navigation">
+            {%- if site.posts.size > 1 -%}
+                {%- assign prev_post = page.previous -%}
+                {%- assign next_post = page.next -%}
+                
+                <div class="terminal-nav-links">
+                    {%- if prev_post -%}
+                        <div class="terminal-nav-prev">
+                            <span class="terminal-nav-label">← previous:</span>
+                            <a href="{{ prev_post.url | relative_url }}" class="terminal-link">{{ prev_post.title }}</a>
+                        </div>
+                    {%- endif -%}
+                    
+                    {%- if next_post -%}
+                        <div class="terminal-nav-next">
+                            <span class="terminal-nav-label">next: →</span>
+                            <a href="{{ next_post.url | relative_url }}" class="terminal-link">{{ next_post.title }}</a>
+                        </div>
+                    {%- endif -%}
+                </div>
+            {%- endif -%}
+        </div>
+        
+        <div class="terminal-back-link">
+            <a href="{{ '/' | relative_url }}" class="terminal-link">← back to terminal</a>
+        </div>
+    </footer>
+</article>

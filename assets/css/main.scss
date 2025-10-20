@@ -1,0 +1,502 @@
+---
+---
+
+@charset "utf-8";
+
+/* Terminal Dark Theme - Compact Header Version */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    background-color: #0a0a0a !important;
+    color: #00ffff !important;
+    overflow-x: auto;
+}
+
+html {
+    background-color: #0a0a0a !important;
+}
+
+.terminal-body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a0a0a !important;
+}
+
+.terminal-container {
+    width: 80vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a0a0a !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #80ffff;
+}
+
+a {
+    color: #80ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffff00;
+}
+
+pre, code {
+    background-color: #1a1a1a;
+    color: #00ff00;
+}
+
+/* ===== COMPACT HEADER STYLES ===== */
+
+.terminal-header {
+    background-color: #0f0f0f;
+    border: 1px solid #00ffff;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+/* Title Bar - Compact */
+.terminal-title-bar {
+    background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
+    border-bottom: 1px solid #00ffff;
+    padding: 0.3rem 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.terminal-window-controls {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.terminal-control {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.terminal-close {
+    background-color: #ff5f56;
+}
+
+.terminal-minimize {
+    background-color: #ffbd2e;
+}
+
+.terminal-maximize {
+    background-color: #27c93f;
+}
+
+.terminal-title {
+    color: #00ffff;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Welcome Section - Compact */
+.terminal-welcome {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #00ffff;
+}
+
+/* ASCII Art - Smaller Font */
+.terminal-ascii {
+    color: #00ffff;
+    font-family: 'Courier New', monospace;
+    font-size: 0.5rem;
+    line-height: 1.1;
+    margin: 0 0 0.6rem 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: auto;
+    white-space: pre;
+}
+
+/* Terminal Info - Compact */
+.terminal-info {
+    margin: 0;
+}
+
+.terminal-desc {
+    color: #80ffff;
+    font-size: 0.8rem;
+    line-height: 1.3;
+    margin: 0 0 0.6rem 0;
+    padding: 0;
+}
+
+.terminal-status {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.terminal-status-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.terminal-status-label {
+    color: #808080;
+}
+
+.terminal-status-value {
+    color: #00ff00;
+    font-weight: 600;
+}
+
+.terminal-online {
+    color: #00ff00;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+/* Navigation - Compact */
+.terminal-nav {
+    padding: 0.6rem 1rem;
+    background-color: #0a0a0a;
+}
+
+.terminal-prompt {
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.terminal-user {
+    color: #00ff00;
+}
+
+.terminal-separator {
+    color: #808080;
+}
+
+.terminal-path {
+    color: #0080ff;
+}
+
+.terminal-symbol {
+    color: #00ff00;
+}
+
+.terminal-command {
+    color: #ffff00;
+}
+
+.terminal-nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.terminal-nav-item {
+    margin: 0;
+}
+
+.terminal-link {
+    color: #00ffff;
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    font-size: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.2s ease;
+}
+
+.terminal-link:hover {
+    color: #ffff00;
+    text-shadow: 0 0 5px #ffff00;
+}
+
+.terminal-active {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.terminal-file-permissions {
+    color: #808080;
+    font-size: 0.7rem;
+}
+
+.terminal-file-name {
+    color: inherit;
+}
+
+/* Main Content Area */
+.terminal-main {
+    flex: 1;
+    padding: 1rem 0;
+}
+
+.terminal-wrapper {
+    background-color: #0a0a0a;
+}
+
+/* Responsive - Even More Compact on Mobile */
+@media (max-width: 768px) {
+    .terminal-container {
+        width: 95vw;
+        padding: 0.5rem 1rem;
+    }
+    
+    .terminal-header {
+        margin-bottom: 1rem;
+    }
+    
+    .terminal-title-bar {
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .terminal-title {
+        font-size: 0.7rem;
+    }
+    
+    .terminal-welcome {
+        padding: 0.6rem 0.8rem;
+    }
+    
+    .terminal-ascii {
+        font-size: 0.4rem;
+        line-height: 1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .terminal-desc {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .terminal-status {
+        gap: 0.6rem;
+        font-size: 0.7rem;
+    }
+    
+    .terminal-nav {
+        padding: 0.5rem 0.8rem;
+    }
+    
+    .terminal-prompt {
+        font-size: 0.7rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .terminal-nav-list {
+        gap: 0.6rem;
+    }
+    
+    .terminal-link {
+        font-size: 0.7rem;
+    }
+}
+
+
+
+/* ===== GOLDEN NEON GLOW FOR HYPERLINKS ===== */
+
+/* Override all link colors with golden neon glow */
+a {
+    color: #FFD700 !important;
+    text-shadow: 
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 15px #FFD700,
+        0 0 20px #FFA500;
+    transition: all 0.3s ease;
+}
+
+a:visited {
+    color: #FFD700 !important;
+    text-shadow: 
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 15px #FFD700,
+        0 0 20px #FFA500;
+}
+
+a:hover {
+    color: #FFED4E !important;
+    text-shadow: 
+        0 0 8px #FFD700,
+        0 0 15px #FFD700,
+        0 0 25px #FFD700,
+        0 0 35px #FFA500,
+        0 0 45px #FFA500;
+    transform: scale(1.05);
+}
+
+/* Ensure terminal links also get golden glow */
+.terminal-link {
+    color: #FFD700 !important;
+    text-shadow: 
+        0 0 5px #FFD700,
+        0 0 10px #FFD700,
+        0 0 15px #FFD700;
+}
+
+.terminal-link:hover {
+    color: #FFED4E !important;
+    text-shadow: 
+        0 0 8px #FFD700,
+        0 0 15px #FFD700,
+        0 0 25px #FFD700,
+        0 0 35px #FFA500;
+}
+
+/* ===== FLOATY ANIMATIONS FOR POSTS ===== */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Float animation for subtle continuous movement */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Apply floaty effects to posts */
+.floaty-post {
+    animation: fadeIn 0.8s ease-out, slideUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Apply to post list items with staggered timing */
+.posts li,
+.post-list li,
+article.post,
+.post-item {
+    animation: fadeIn 0.8s ease-out, slideUp 0.8s ease-out;
+    animation-fill-mode: both;
+    transition: transform 0.3s ease;
+}
+
+/* Staggered animation delays for multiple posts */
+.posts li:nth-child(1),
+.post-list li:nth-child(1),
+article.post:nth-child(1),
+.post-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.posts li:nth-child(2),
+.post-list li:nth-child(2),
+article.post:nth-child(2),
+.post-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.posts li:nth-child(3),
+.post-list li:nth-child(3),
+article.post:nth-child(3),
+.post-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.posts li:nth-child(4),
+.post-list li:nth-child(4),
+article.post:nth-child(4),
+.post-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.posts li:nth-child(5),
+.post-list li:nth-child(5),
+article.post:nth-child(5),
+.post-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.posts li:nth-child(6),
+.post-list li:nth-child(6),
+article.post:nth-child(6),
+.post-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.posts li:nth-child(7),
+.post-list li:nth-child(7),
+article.post:nth-child(7),
+.post-item:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.posts li:nth-child(8),
+.post-list li:nth-child(8),
+article.post:nth-child(8),
+.post-item:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+/* Hover effect for posts - subtle float */
+.posts li:hover,
+.post-list li:hover,
+article.post:hover,
+.post-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+}
+
+/* Apply to post titles and content blocks */
+.post-title,
+.post-content,
+.post-header {
+    animation: fadeIn 1s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Continuous subtle float for post cards */
+.post-card {
+    animation: float 3s ease-in-out infinite;
+}

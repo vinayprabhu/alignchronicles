@@ -1,0 +1,85 @@
+<header class="terminal-header">
+    <div class="terminal-title-bar">
+        <div class="terminal-window-controls">
+            <span class="terminal-control terminal-close"></span>
+            <span class="terminal-control terminal-minimize"></span>
+            <span class="terminal-control terminal-maximize"></span>
+        </div>
+        <div class="terminal-title">{{ site.title | escape }} - Terminal v2.1.0</div>
+    </div>
+    
+    <div class="terminal-welcome">
+        <pre class="terminal-ascii">
+                  ,--,                                                                                                                              ,--,                          
+               ,---.'|                                ,--.                           ,--,              ,----..            ,--.                   ,---.'|                          
+   ,---,       |   | :      ,---,  ,----..          ,--.'|          ,----..        ,--.'|,-.----.     /   /   \         ,--.'|   ,---,  ,----..  |   | :       ,---,.  .--.--.    
+  '  .' \      :   : |   ,`--.' | /   /   \     ,--,:  : |         /   /   \    ,--,  | :\    /  \   /   .     :    ,--,:  : |,`--.' | /   /   \ :   : |     ,'  .' | /  /    '.  
+ /  ;    '.    |   ' :   |   :  :|   :     : ,`--.'`|  ' :        |   :     :,---.'|  : ';   :    \ .   /   ;.  \,`--.'`|  ' :|   :  :|   :     :|   ' :   ,---.'   ||  :  /`. /  
+:  :       \   ;   ; '   :   |  '.   |  ;. / |   :  :  | |        .   |  ;. /|   | : _' ||   | .\ :.   ;   /  ` ;|   :  :  | |:   |  '.   |  ;. /;   ; '   |   |   .';  |  |--`   
+:  |   /\   \  '   | |__ |   :  |.   ; /--`  :   |   \ | :        .   ; /--` :   : |.'  |.   : |: |;   |  ; \ ; |:   |   \ | :|   :  |.   ; /--` '   | |__ :   :  |-,|  :  ;_     
+|  :  ' ;.   : |   | :.'|'   '  ;;   | ;  __ |   : '  '; |        ;   | ;    |   ' '  ; :|   |  \ :|   :  | ; | '|   : '  '; |'   '  ;;   | ;    |   | :.'|:   |  ;/| \  \    `.  
+|  |  ;/  \   \'   :    ;|   |  ||   : |.' .''   ' ;.    ;        |   : |    '   |  .'. ||   : .  /.   |  ' ' ' :'   ' ;.    ;|   |  ||   : |    '   :    ;|   :   .'  `----.   \ 
+'  :  | \  \ ,'|   |  ./ '   :  ;.   | '_.' :|   | | \   |        .   | '___ |   | :  | ';   | |  \'   ;  \; /  ||   | | \   |'   :  ;.   | '___ |   |  ./ |   |  |-,  __ \  \  | 
+|  |  '  '--'  ;   : ;   |   |  ''   ; : \  |'   : |  ; .'        '   ; : .'|'   : |  : ;|   | ;\  \\   \  ',  / '   : |  ; .'|   |  ''   ; : .'|;   : ;   '   :  ;/| /  /`--'  / 
+|  :  :        |   ,/    '   :  |'   | '/  .'|   | '`--'          '   | '/  :|   | '  ,/ :   ' | \.' ;   :    /  |   | '`--'  '   :  |'   | '/  :|   ,/    |   |    \'--'.     /  
+|  | ,'        '---'     ;   |.' |   :    /  '   : |              |   :    / ;   : ;--'  :   : :-'    \   \ .'   '   : |      ;   |.' |   :    / '---'     |   :   .'  `--'---'   
+`--''                    '---'    \   \ .'   ;   |.'               \   \ .'  |   ,/      |   |.'       `---`     ;   |.'      '---'    \   \ .'            |   | ,'               
+                                   `---`     '---'                  `---`    '---'       `---'                   '---'                  `---`              `----'                 
+                                                                                                                                                                                  
+        </pre>
+        <div class="terminal-info">
+            <p class="terminal-desc">{{ site.description | escape }}</p>
+            <div class="terminal-status">
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">connection:</span>
+                    <span class="terminal-status-value terminal-online">ONLINE</span>
+                </span>
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">posts:</span>
+                    <span class="terminal-status-value">{{ site.posts.size }}</span>
+                </span>
+                <span class="terminal-status-item">
+                    <span class="terminal-status-label">last_update:</span>
+                    <span class="terminal-status-value">{{ site.time | date: "%Y-%m-%d" }}</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="terminal-nav">
+        <div class="terminal-prompt">
+            <span class="terminal-user">user@alignchronicles</span>
+            <span class="terminal-separator">:</span>
+            <span class="terminal-path">~</span>
+            <span class="terminal-symbol">$</span>
+            <span class="terminal-command">ls -la</span>
+        </div>
+        
+        <ul class="terminal-nav-list">
+            <li class="terminal-nav-item">
+                <a href="{{ '/' | relative_url }}" class="terminal-link {% if page.url == '/' %}terminal-active{% endif %}">
+                    <span class="terminal-file-permissions">-rw-r--r--</span>
+                    <span class="terminal-file-name">home.md</span>
+                </a>
+            </li>
+            <li class="terminal-nav-item">
+                <a href="{{ '/about' | relative_url }}" class="terminal-link {% if page.url == '/about/' %}terminal-active{% endif %}">
+                    <span class="terminal-file-permissions">-rw-r--r--</span>
+                    <span class="terminal-file-name">about.md</span>
+                </a>
+            </li>
+            <li class="terminal-nav-item">
+                <a href="{{ '/archive' | relative_url }}" class="terminal-link {% if page.url == '/archive/' %}terminal-active{% endif %}">
+                    <span class="terminal-file-permissions">drwxr-xr-x</span>
+                    <span class="terminal-file-name">posts/</span>
+                </a>
+            </li>
+            <li class="terminal-nav-item">
+                <a href="{{ '/contact' | relative_url }}" class="terminal-link {% if page.url == '/contact/' %}terminal-active{% endif %}">
+                    <span class="terminal-file-permissions">-rw-r--r--</span>
+                    <span class="terminal-file-name">contact.md</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

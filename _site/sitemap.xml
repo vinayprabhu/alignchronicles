@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/ai-safety/alignment/2024/01/15/the-alignment-problem/</loc>
+<lastmod>2024-01-15T06:30:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/consciousness/philosophy/2024/01/20/consciousness-in-silicon/</loc>
+<lastmod>2024-01-20T01:15:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/design/cyberpunk/2024/01/25/terminal-aesthetics-cyberpunk-ui/</loc>
+<lastmod>2024-01-25T08:42:00-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/archive/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/contact/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+</urlset>

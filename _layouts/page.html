@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="terminal-page">
+    <header class="terminal-page-header">
+        <div class="terminal-prompt">
+            <span class="terminal-user">user@alignchronicles</span>
+            <span class="terminal-separator">:</span>
+            <span class="terminal-path">~/{{ page.slug | default: page.title | slugify }}</span>
+            <span class="terminal-symbol">$</span>
+            <span class="terminal-command">cat index.md</span>
+        </div>
+        
+        <h1 class="terminal-page-title">{{ page.title | escape }}</h1>
+    </header>
+    
+    <div class="terminal-content">
+        {{ content }}
+    </div>
+    
+    <footer class="terminal-page-footer">
+        <div class="terminal-back-link">
+            <a href="{{ '/' | relative_url }}" class="terminal-link">← back to terminal</a>
+        </div>
+    </footer>
+</article>
