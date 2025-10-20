@@ -1,13 +1,13 @@
 
 # Site settings
 title: Align Chronicles
-email: contact@alignchronicles.dev
+email: vinaypra@alumni <cmu> edu
 description: >-
   A retro sci-fi terminal blog exploring the intersection of technology,
   artificial intelligence, and human alignment in a cyberpunk future.
 baseurl: "/alignchronicles" # the subpath of your site, e.g. /blog
 url: "https://vinayprabhu.github.io" # the base hostname & protocol for your site
-twitter_username: alignchronicles
+twitter_username: vinayprabhu
 github_username: vinayprabhu
 
 # Build settings
