@@ -25,11 +25,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:categories/:year/:month/:day/:title/
+# Pagination disabled for simplicity
+# Note: The built-in 'posts' collection does not need to be defined in collections
+
+# Permalink structure for posts
+permalink: /:categories/:year/:month/:day/:title/
 
 # Pagination disabled for simplicity
 
