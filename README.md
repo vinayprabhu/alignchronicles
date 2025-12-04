@@ -1,119 +1,35 @@
 
-# Align Chronicles - Cyberpunk Jekyll Blog Template
+# Align Chronicles - My cyberpunk Jekyll Blog Template
 
-A retro sci-fi terminal-themed Jekyll blog template designed for GitHub Pages. Features a green-on-black cyberpunk aesthetic with vintage computer terminal styling, perfect for blogs about AI, technology, cyberpunk culture, and digital philosophy.
+My retro sci-fi terminal-themed Jekyll blog template designed for GitHub Pages. Features a green-on-black cyberpunk aesthetic with vintage computer terminal styling, perfect for blogs about AI, technology, cyberpunk culture, and digital philosophy.
 
 ![Terminal Interface](https://img.shields.io/badge/Interface-Terminal-00FFFF?style=for-the-badge&logo=terminal&logoColor=00FFFF) ![Jekyll](https://img.shields.io/badge/Jekyll-CC0000?style=for-the-badge&logo=Jekyll&logoColor=white) ![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=for-the-badge&logo=GitHub%20Pages&logoColor=white)
 
 ## 🚀 Live Demo
 
-Check out the template in action: [View Live Demo](https://yourusername.github.io/align-chronicles-blog)
+Check out my blog in action here: [View Live Demo](https://vinayprabhu.github.io/alignchronicles/) 
 
-## ✨ Features
-
-### 🎨 Visual Design
-- **Retro Sci-Fi Terminal Aesthetics** - Cyan on black color scheme with vintage computer terminal styling
-- **Responsive Design** - Works seamlessly across desktop, tablet, and mobile devices  
-- **Terminal Window Effects** - Complete with window controls, title bar, and terminal prompt styling
-- **Matrix-Style Background Effects** - Subtle animated background elements
-- **ASCII Art Header** - Custom ASCII art logo with glowing animations
-- **Monospace Typography** - Fira Code and Share Tech Mono fonts for authentic terminal feel
-
-### 📝 Content Management
-- **Jekyll-Powered** - Static site generator optimized for GitHub Pages
-- **Markdown Blog Posts** - Write posts in simple Markdown format
-- **LaTeX Math Support** - MathJax integration for mathematical notation
-- **Multi-Page Structure** - Home, About, Archive, and Contact pages
-- **Post Categories & Tags** - Organized content with filtering capabilities
-- **SEO Optimized** - Built-in SEO tags and sitemap generation
-
-### 🛠 Technical Features
-- **GitHub Pages Compatible** - Deploy directly from your GitHub repository
-- **No Build Process Required** - Push to GitHub and your site is live
-- **Fast Loading** - Minimal JavaScript, optimized CSS
-- **Terminal-Style Navigation** - File system inspired menu structure
-- **Code Syntax Highlighting** - Rouge syntax highlighter with terminal themes
-- **RSS Feed** - Automatic feed generation for subscribers
-
-### 🎯 Interactive Elements
-- **Typing Animations** - Command line typing effects
-- **Hover Effects** - Terminal-style glitch effects and glows
-- **Console Easter Eggs** - Hidden developer console commands
-- **Dynamic Uptime Display** - Real-time session uptime counter
-- **Interactive Terminal Prompts** - Authentic command line styling
-
-## 📦 Installation & Setup
-
-### Option 1: Use This Template (Recommended)
-
-1. **Click the "Use this template" button** on the GitHub repository page
-2. **Name your repository** - For GitHub Pages, use `yourusername.github.io` format
-3. **Clone your new repository** to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/yourusername.github.io.git
-   cd yourusername.github.io
-   ```
-
-### Option 2: Fork This Repository
-
-1. **Fork this repository** to your GitHub account
-2. **Rename the repository** to `yourusername.github.io` in settings
-3. **Clone your fork** to your local machine
-
-### Option 3: Manual Setup
-
-1. **Create a new repository** named `yourusername.github.io`
-2. **Download the template files** and upload them to your repository
-3. **Ensure all files are in the root directory** of your repository
-
-## ⚙️ Configuration
-
-### Basic Configuration
-
-Edit `_config.yml` to customize your site:
-
-```yaml
-# Site settings
-title: Your Blog Name
-email: your.email@example.com
-description: >-
-  Your blog description here. This appears in search results and the site header.
-baseurl: "" # Keep empty for GitHub Pages
-url: "https://yourusername.github.io" # Replace with your GitHub Pages URL
-
-# Social media (optional)
-twitter_username: yourusername
-github_username: yourusername
-```
-
-### Customizing the Design
-
-#### Colors
-Edit `assets/css/main.scss` to customize the color scheme:
-
-```scss
-// Terminal color scheme variables
-$terminal-bg: #0a0a0a;           // Main background
-$terminal-cyan: #00ffff;         // Primary accent color
-$terminal-green: #00ff00;        // Success/command color
-$terminal-yellow: #ffff00;       // Warning color
-```
-
-#### Typography
-The theme uses these fonts by default:
-- **Fira Code** - Modern monospace with ligatures
-- **Share Tech Mono** - Sci-fi inspired monospace font
-
-To use different fonts, update the Google Fonts link in `_layouts/default.html`.
-
-#### ASCII Art
-Customize the header ASCII art in `_includes/header.html`. Generate your own at:
-- [ASCII Art Generator](http://www.patorjk.com/software/taag/)
-- [Text to ASCII Art Generator](https://fsymbols.com/generators/carty/)
 
 ## 📝 Writing Posts
 
 ### Creating a New Post
+📋 Quick Checklist:
+
+✅ Markdown file named: YYYY-MM-DD-title.md
+
+✅ File placed in: _posts/
+
+✅ Images placed in: assets/images/posts/ 
+- Example:
+  - assets/images/posts/my-image-01.jpg
+  - assets/images/posts/diagram-02.png
+    
+✅ Image paths start with: /alignchronicles/assets/images/posts/
+- Example: ```![Alt text description](/alignchronicles/assets/images/posts/my-image-01.jpg)```
+  
+✅ Frontmatter includes: layout, title, date
+
+✅ Committed and pushed to GitHub
 
 Create a new file in the `_posts` directory with the format: `YYYY-MM-DD-post-title.md`
 
