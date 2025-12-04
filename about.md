@@ -43,7 +43,7 @@ Status: Online and processing...
 
 ## Connect to my mind hive
 
-I love interacting with fellow scholars! My contact details are here: [contact page](/contact). I've heard rumors that adding *LiquidGoldMagikarp* in the subject line of the email guarantees a response.
+I love interacting with fellow scholars! My contact details are here: [contact page](/alignchronicles/contact). I've heard rumors that adding *LiquidGoldMagikarp* in the subject line of the email guarantees a response.
 
 For real-time updates, consider subscribing to the [RSS quantum feed](/feed.xml).
 
