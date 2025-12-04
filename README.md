@@ -23,7 +23,12 @@ Check out my blog in action here: [View Live Demo](https://vinayprabhu.github.io
 - Example:
   - assets/images/posts/my-image-01.jpg
   - assets/images/posts/diagram-02.png
-    
+ 
+Note: You may sue these decoratives
+
+- ```![Small image](/alignchronicles/assets/images/posts/image.jpg){: .small}```
+
+- ```![Inline image](/alignchronicles/assets/images/posts/icon.jpg){: .inline}```  
 ✅ Image paths start with: /alignchronicles/assets/images/posts/
 - Example: ```![Alt text description](/alignchronicles/assets/images/posts/my-image-01.jpg)```
   
