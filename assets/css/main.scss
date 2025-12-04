@@ -500,3 +500,26 @@ article.post:hover,
 .post-card {
     animation: float 3s ease-in-out infinite;
 }
+/* Responsive Images */
+.post-content img,
+article img,
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* For images that should be smaller */
+.post-content img.small {
+  max-width: 50%;
+}
+
+/* For images that should be inline with text */
+.post-content img.inline {
+  display: inline-block;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
