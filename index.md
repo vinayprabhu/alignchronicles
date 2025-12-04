@@ -14,10 +14,6 @@ From time to time, I scribble [code](https://github.com/vinayprabhu) and ship [s
 
 ## Recent Posts
 
-{% comment %}
-This simple loop displays the 5 most recent blog posts
-{% endcomment %}
-
 {% for post in site.posts limit:5 %}
-* [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+* [{{ post.title }}]({{ post.url | relative_url }}) - {{ post.date | date: "%B %d, %Y" }}
 {% endfor %}
