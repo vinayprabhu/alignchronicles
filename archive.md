@@ -22,7 +22,6 @@ Welcome to the complete archive of transmissions from the Align Chronicles termi
 ## All Posts
 
 {% if site.posts.size > 0 %}
-
 <div class="terminal-post-list">
     {% for post in site.posts -%}
         <article class="terminal-post-item">
@@ -30,31 +29,7 @@ Welcome to the complete archive of transmissions from the Align Chronicles termi
                 <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </h3>
             <div class="terminal-post-item-meta">
-                <span class="terminal-bracket">[</span>
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                    {{ post.date | date: "%Y-%m-%d %H:%M" }}
-                </time>
-                {% if post.author %}
-                    <span class="terminal-separator"> | </span>
-                    <span class="terminal-author">{{ post.author }}</span>
-                {% endif %}
-                {% if post.categories.size > 0 %}
-                    <span class="terminal-separator"> | </span>
-                    <span class="terminal-categories">
-                        {% for category in post.categories %}
-                            <span class="terminal-tag">{{ category }}</span>
-                        {% endfor %}
-                    </span>
-                {% endif %}
-                {% if post.tags.size > 0 %}
-                    <span class="terminal-separator"> | </span>
-                    <span class="terminal-tags">
-                        {% for tag in post.tags limit:3 %}
-                            <span class="terminal-tag">{{ tag }}</span>
-                        {% endfor %}
-                    </span>
-                {% endif %}
-                <span class="terminal-bracket">]</span>
+                <span class="terminal-bracket">[</span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d %H:%M" }}</time>{% if post.author %}<span class="terminal-separator"> | </span><span class="terminal-author">{{ post.author }}</span>{% endif %}{% if post.categories.size > 0 %}<span class="terminal-separator"> | </span><span class="terminal-categories">{% for category in post.categories %}<span class="terminal-tag">{{ category }}</span>{% endfor %}</span>{% endif %}{% if post.tags.size > 0 %}<span class="terminal-separator"> | </span><span class="terminal-tags">{% for tag in post.tags limit:3 %}<span class="terminal-tag">{{ tag }}</span>{% endfor %}</span>{% endif %}<span class="terminal-bracket">]</span>
             </div>
             {% if post.excerpt %}
                 <div class="terminal-post-item-excerpt">
@@ -62,7 +37,7 @@ Welcome to the complete archive of transmissions from the Align Chronicles termi
                 </div>
             {% endif %}
         </article>
-    {% endfor %}
+    {% endfor -%}
 </div>
 {% else %}
 <div class="terminal-empty-state">
@@ -75,15 +50,13 @@ drwxr-xr-x 3 user alignchronicles   4096 Jan  1 00:00 ..
 No posts found. Neural network initializing...
     </code></pre>
     <p>The archive is empty. Posts will appear here once the neural interface is fully operational.</p>
-
 </div>
 {% endif %}
 
 ## Archive by Category
 
-{% assign categories = site.posts | map: 'categories' | join: ',' | split: ',' | sort | uniq %}
+{% assign categories = site.posts | map: "categories" | compact | flatten | uniq | sort %}
 {% if categories.size > 0 %}
-
 <div class="terminal-categories-archive">
     <div class="terminal-prompt">
         <span class="terminal-user">user@alignchronicles</span>
@@ -121,7 +94,6 @@ No posts found. Neural network initializing...
             {% endunless %}
         {% endfor %}
     </div>
-
 </div>
 {% endif %}
 
@@ -129,7 +101,6 @@ No posts found. Neural network initializing...
 
 {% assign posts_by_year = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% if posts_by_year.size > 0 %}
-
 <div class="terminal-yearly-archive">
     <div class="terminal-prompt">
         <span class="terminal-user">user@alignchronicles</span>
@@ -158,7 +129,6 @@ No posts found. Neural network initializing...
             </div>
         {% endfor %}
     </div>
-
 </div>
 {% endif %}
 
@@ -167,72 +137,3 @@ No posts found. Neural network initializing...
 ```bash
 $ echo "Archive navigation complete. Use 'cd /' to return to root directory."
 Archive navigation complete. Use 'cd /' to return to root directory.
-```
-
-<style>
-.terminal-categories-archive,
-.terminal-yearly-archive {
-    margin: 2rem 0;
-}
-
-.terminal-category-item,
-.terminal-year-item {
-    background-color: rgba(26, 26, 26, 0.5);
-    border: 1px solid rgba(0, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-.terminal-category-title,
-.terminal-year-title {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    color: #00ffff;
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
-.terminal-file-count {
-    color: #808080;
-    font-size: 0.9rem;
-}
-
-.terminal-category-posts {
-    margin-left: 2rem;
-}
-
-.terminal-category-post-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.9rem;
-}
-
-.terminal-file-date {
-    color: #00cccc;
-    min-width: 80px;
-}
-
-.terminal-category-more {
-    margin-top: 0.5rem;
-    font-style: italic;
-}
-
-.terminal-year-summary {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-left: 2rem;
-    font-size: 0.9rem;
-}
-
-.terminal-month-summary {
-    color: #00cccc;
-    padding: 0.25rem 0.5rem;
-    background-color: rgba(0, 255, 255, 0.1);
-    border-radius: 4px;
-}
-</style>
