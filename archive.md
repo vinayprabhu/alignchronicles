@@ -8,10 +8,6 @@ permalink: /archive/
 
 Welcome to the complete archive of transmissions from the Align Chronicles terminal. All posts are indexed chronologically and by neural pathway (category).
 
-$e=mc^2$ is a really nice equation!
-
-Can we $x-\bf{y};\mathbf{y} \in \mathcal{C}$ during the latest stages of 
-
 <div class="terminal-prompt">
     <span class="terminal-user">user@alignchronicles</span>
     <span class="terminal-separator">:</span>
@@ -28,7 +24,7 @@ Can we $x-\bf{y};\mathbf{y} \in \mathcal{C}$ during the latest stages of
 {% if site.posts.size > 0 %}
 
 <div class="terminal-post-list">
-    {% for post in site.posts %}
+    {% for post in site.posts -%}
         <article class="terminal-post-item">
             <h3 class="terminal-post-item-title">
                 <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
