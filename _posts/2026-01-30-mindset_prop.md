@@ -9,17 +9,17 @@ tags: [artificial-intelligence, network-science, llm, persona-vectors]
 ---
 
 ## Background: What led to this 
-Academically, I have led a journeyman's life and my previous work [[1]][1] has spanned network sciences, statistical physics, information theory, computational social science, machine learning, human kinematics, computer vision and data ethics. I have a dual PhD (ECE + CS) from Carnegie Mellon University where my doctoral thesis [[2]][2] investigated the phenomenology of the *information contagion* on Online Social Networks (OSNs) using tools from Graph Theory, Statistical Physics and Communication Theory.
+Academically, I have led a journeyman's life and my previous work [[1]](#ref1) has spanned network sciences, statistical physics, information theory, computational social science, machine learning, human kinematics, computer vision and data ethics. I have a dual PhD (ECE + CS) from Carnegie Mellon University where my doctoral thesis [[2]](#ref2) investigated the phenomenology of the *information contagion* on Online Social Networks (OSNs) using tools from Graph Theory, Statistical Physics and Communication Theory.
 
-In my recent capacity as the CEO of HAL51 AI, I had to don the role of an *LLM-whisperer* updating our guard-railing mechanisms every week to ensure our real-world deployed educational co-pilots [[3]][3] would *stay on course* in a sensitive setting such as a classroom. This has given me the proverbial ring side view on how young minds interact with AI-powered novel interfaces. This idea came to me in the midst of a noisy classroom in Fremont last year. 
+In my recent capacity as the CEO of HAL51 AI, I had to don the role of an *LLM-whisperer* updating our guard-railing mechanisms every week to ensure our real-world deployed educational co-pilots [[3]](#ref3) would *stay on course* in a sensitive setting such as a classroom. This has given me the proverbial ring side view on how young minds interact with AI-powered novel interfaces. This idea came to me in the midst of a noisy classroom in Fremont last year. 
 
 ## The core idea of mindset propagation probing
-In my previous work on *"Latent Sentiment Detection in Online Social Networks: A Communications-oriented View"* [[4]][4], I had investigated an exemplar manifestation of viral mindset propagation on social networks by modeling "*Hashtag-Hijacking*" on Twitter using Markov Random Fields (MRFs). This resulted in a communications-theoretic framework for characterizing the probability of error of detecting the underlying latent sentiment that introduced a new factor: **Network topology**. 
+In my previous work on *"Latent Sentiment Detection in Online Social Networks: A Communications-oriented View"* [[4]](#ref4), I had investigated an exemplar manifestation of viral mindset propagation on social networks by modeling "*Hashtag-Hijacking*" on Twitter using Markov Random Fields (MRFs). This resulted in a communications-theoretic framework for characterizing the probability of error of detecting the underlying latent sentiment that introduced a new factor: **Network topology**. 
 
 Recent advancements in large language modeling (LLM) have given us the three requisite ingredients: 
 1. **Natural conversation generation:** Large language models with ability to simulate human-styled natural conversations.
 2. **Mindset absorption:** Fine-tuning methods that allow us to harvest the conversations and inflict internal weight changes.
-3. **Mechanistic probing:** A [Persona Vectors Framework (PVF)][5] [[5]][5] that allows us to probe, measure, locate, assign and manipulate personas associated with these large language models.
+3. **Mechanistic probing:** A [Persona Vectors Framework (PVF)][pvf_link] [[5]](#ref5) that allows us to probe, measure, locate, assign and manipulate personas associated with these large language models.
 
 To this end, I propose a rigorous empirical framework of modeling mindset propagation by simulating a social network of LLMs. 
 
@@ -36,8 +36,10 @@ To this end, I propose a rigorous empirical framework of modeling mindset propag
 ---
 
 ### References
-[1]: https://scholar.google.com/citations?user=5Lck_J0AAAAJ&hl=en "Google Scholar Profile"
-[2]: https://kilthub.cmu.edu/articles/thesis/Network_Aided_Classification_and_Detection_of_Data/7430012?file=13756967 "Doctoral Thesis"
-[3]: https://www.youtube.com/watch?v=J-ihwfPD3YA "Educational Co-pilots Demo"
-[4]: https://arxiv.org/pdf/1401.2113 "Latent Sentiment Detection Paper"
-[5]: https://arxiv.org/abs/2507.21509 "Persona Vectors Framework"
+* <a name="ref1"></a>[1] [Google Scholar Profile](https://scholar.google.com/citations?user=5Lck_J0AAAAJ&hl=en)
+* <a name="ref2"></a>[2] [Doctoral Thesis (CMU)](https://kilthub.cmu.edu/articles/thesis/Network_Aided_Classification_and_Detection_of_Data/7430012?file=13756967)
+* <a name="ref3"></a>[3] [Educational Co-pilots Demo](https://www.youtube.com/watch?v=J-ihwfPD3YA)
+* <a name="ref4"></a>[4] [Latent Sentiment Detection paper](https://arxiv.org/pdf/1401.2113)
+* <a name="ref5"></a>[5] [Persona Vectors Framework (PVF)](https://arxiv.org/abs/2507.21509)
+
+[pvf_link]: https://arxiv.org/abs/2507.21509
